@@ -1,0 +1,49 @@
+/** biome-ignore-all lint/suspicious/noUnknownAtRules: They are Tailwind related */
+@import "tailwindcss";
+
+@theme {
+  --font-cormorantGaramond: var(--font-cormorant-garamond), serif;
+  --font-poppins: var(--font-poppins), sans-serif;
+}
+
+@layer components {
+  .article {
+    @apply flex flex-col gap-3 font-poppins text-lg mb-20 tracking-wide;
+
+    h1 {
+      @apply font-cormorantGaramond text-5xl tracking-tight mt-5 text-neutral-100;
+    }
+
+    h2 {
+      @apply font-cormorantGaramond text-4xl tracking-tight mt-5 text-neutral-100;
+    }
+
+    h3 {
+      @apply font-cormorantGaramond text-3xl tracking-tight mt-5 text-neutral-100;
+    }
+
+    ol {
+      @apply list-decimal flex flex-col mx-10 gap-2;
+    }
+
+    ul {
+      @apply list-disc flex flex-col mx-10 gap-2;
+    }
+
+    pre {
+      @apply bg-neutral-800 text-neutral-200 p-5 overflow-x-auto rounded-md;
+    }
+
+    blockquote {
+      @apply pl-5 border-l-2 border-neutral-400/50;
+    }
+
+    p > img {
+      @apply w-1/2 mx-auto;
+    }
+
+    a {
+      @apply text-sky-400 underline hover:no-underline hover:text-sky-200;
+    }
+  }
+}
