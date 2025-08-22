@@ -13,7 +13,7 @@ export default function ArticleItem({ category, id, title }: ArticleItemProps) {
       href={`/${id}`}
       className="
         text-neutral-100 hover:text-sky-400
-        font-poppins
+        font-oxanium
         flex items-center
         hover:before:content-['>>>'] hover:before:pe-1
       "

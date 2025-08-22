@@ -3,23 +3,23 @@
 
 @theme {
   --font-cormorantGaramond: var(--font-cormorant-garamond), serif;
-  --font-poppins: var(--font-poppins), sans-serif;
+  --font-oxanium: var(--font-oxanium), sans-serif;
 }
 
 @layer components {
   .article {
-    @apply flex flex-col gap-3 font-poppins text-lg mb-20 tracking-wide;
+    @apply flex flex-col gap-3 font-oxanium text-lg mb-20 tracking-wide;
 
     h1 {
-      @apply font-cormorantGaramond text-5xl tracking-tight mt-5 text-neutral-100;
+      @apply font-oxanium font-bold text-5xl tracking-tight mt-5 text-neutral-100;
     }
 
     h2 {
-      @apply font-cormorantGaramond text-4xl tracking-tight mt-5 text-neutral-100;
+      @apply font-oxanium font-bold text-4xl tracking-tight mt-5 text-neutral-100;
     }
 
     h3 {
-      @apply font-cormorantGaramond text-3xl tracking-tight mt-5 text-neutral-100;
+      @apply font-oxanium font-bold text-3xl tracking-tight mt-5 text-neutral-100;
     }
 
     ol {
@@ -31,7 +31,11 @@
     }
 
     pre {
-      @apply bg-neutral-800 text-neutral-200 p-5 overflow-x-auto rounded-md;
+      @apply bg-neutral-800 text-neutral-200 p-5 overflow-x-auto rounded-md font-sans;
+    }
+
+    code {
+      @apply font-['JetBrains_Mono'];
     }
 
     blockquote {

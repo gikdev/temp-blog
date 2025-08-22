@@ -6,8 +6,9 @@ export default function HomePage() {
 
   return (
     <section className="mx-auto w-11/12 md:w-1/2 mt-20 flex flex-col gap-16 mb-20">
-      <header className="font-cormorantGaramond font-light text-6xl text-neutral-100 text-center">
-        <h1>Minimal Blog</h1>
+      <header className="text-center">
+        <h1 className="font-oxanium font-bold text-6xl text-neutral-100">Bahrami's Blog</h1>
+        <p className="font-oxanium text-3xl text-sky-400">The place where I share my thoughts and knowledge.</p>
       </header>
 
       <section className="flex flex-col gap-2">
